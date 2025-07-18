@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Cyprus Ltd | Professional Landscaping Services in Kampala</title>
+    <meta name="description" content="Uganda's premier landscaping company offering eco-friendly landscape design, garden maintenance, irrigation systems and outdoor beautification services in Kampala.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-gradient {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1600566752227-8f3b9a6f9323?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .testimonial-card {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .floating-btn, .quote-btn {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(74, 222, 128, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(74, 222, 128, 0);
+            }
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+        [class^="fa-"], .fa-leaf {
+            transition: transform 0.3s ease;
+        }
+        [class^="fa-"]:hover, .fa-leaf:hover {
+            animation: bounce 0.8s;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/256775132777" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-lg z-50 floating-btn">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Sticky Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-40">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <span class="text-green-600 text-2xl font-bold"><i class="fas fa-leaf mr-2"></i>Green Cyprus</span>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-green-600 font-medium">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-green-600 font-medium">About</a>
+                    <a href="#services" class="text-gray-700 hover:text-green-600 font-medium">Services</a>
+                    <a href="#gallery" class="text-gray-700 hover:text-green-600 font-medium">Gallery</a>
+                    <a href="#contact" class="text-gray-700 hover:text-green-600 font-medium">Contact</a>
+                    <a href="#contact" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md font-medium transition duration-300">Get Quote</a>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden bg-white pb-4">
+                <a href="#home" class="block px-4 py-2 text-gray-700 hover:text-green-600">Home</a>
+                <a href="#about" class="block px-4 py-2 text-gray-700 hover:text-green-600">About</a>
+                <a href="#services" class="block px-4 py-2 text-gray-700 hover:text-green-600">Services</a>
+                <a href="#gallery" class="block px-4 py-2 text-gray-700 hover:text-green-600">Gallery</a>
+                <a href="#contact" class="block px-4 py-2 text-gray-700 hover:text-green-600">Contact</a>
+                <a href="#contact" class="block bg-green-600 text-white px-4 py-2 rounded-md mx-4 mt-2 text-center">Get Quote</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white py-20 md:py-32">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Greener Spaces. Better Living.</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Transforming outdoor spaces in Kampala with sustainable, beautiful landscaping solutions since 2008.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contact" class="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-md font-bold text-lg transition duration-300 quote-btn">Get a Free Quote</a>
+                <a href="tel:+256775132777" class="bg-white hover:bg-gray-100 text-green-700 px-8 py-4 rounded-md font-bold text-lg transition duration-300 group"><i class="fas fa-phone mr-2 group-hover:animate-bounce"></i>Call Us Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <div class="bg-green-50 py-6">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center items-center gap-6 md:gap-12">
+                <div class="flex items-center">
+                    <i class="fas fa-award text-green-600 text-2xl mr-3"></i>
+                    <span class="font-medium">15+ Years Experience</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-leaf text-green-600 text-2xl mr-3"></i>
+                    <span class="font-medium">Eco-Friendly Practices</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-users text-green-600 text-2xl mr-3"></i>
+                    <span class="font-medium">500+ Satisfied Clients</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-map-marker-alt text-green-600 text-2xl mr-3"></i>
+                    <span class="font-medium">Serving Kampala & Beyond</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Green Cyprus Team" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">About Green Cyprus Ltd</h2>
+                    <p class="text-gray-600 mb-4">Founded in 2008, Green Cyprus Ltd has grown to become one of Kampala's most trusted landscaping companies. Our mission is to create beautiful, sustainable outdoor spaces that enhance quality of life while respecting the environment.</p>
+                    <p class="text-gray-600 mb-6">We combine artistic vision with technical expertise to deliver customized landscaping solutions for homes, businesses, and institutions across Uganda. Our team of certified professionals is committed to excellence in every project we undertake.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span class="text-gray-700">100% client satisfaction guarantee</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span class="text-gray-700">Environmentally responsible practices</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span class="text-gray-700">Professional, reliable service</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span class="text-gray-700">Competitive pricing with transparent quotes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Landscaping Services</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Comprehensive solutions tailored to your outdoor space needs</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md service-card transition duration-300">
+                    <div class="h-48 bg-green-100 flex items-center justify-center">
+                        <i class="fas fa-pencil-ruler text-green-600 text-5xl hover:animate-bounce"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Landscape Design</h3>
+                        <p class="text-gray-600">Custom landscape designs that blend aesthetics with functionality, tailored to your property's unique characteristics and your personal style.</p>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md service-card transition duration-300">
+                    <div class="h-48 bg-green-100 flex items-center justify-center">
+                        <i class="fas fa-tree text-green-600 text-5xl hover:animate-bounce"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Lawn & Garden Care</h3>
+                        <p class="text-gray-600">Professional lawn maintenance, garden care, and plant health services to keep your outdoor space vibrant and healthy year-round.</p>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md service-card transition duration-300">
+                    <div class="h-48 bg-green-100 flex items-center justify-center">
+                        <i class="fas fa-seedling text-green-600 text-5xl hover:animate-bounce"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Tree & Shrub Planting</h3>
+                        <p class="text-gray-600">Expert selection and planting of trees and shrubs suited to Uganda's climate, including native species that support local ecosystems.</p>
+                    </div>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md service-card transition duration-300">
+                    <div class="h-48 bg-green-100 flex items-center justify-center">
+                        <i class="fas fa-tint text-green-600 text-5xl hover:animate-bounce"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Irrigation Systems</h3>
+                        <p class="text-gray-600">Water-efficient irrigation system design and installation to keep your landscape lush while conserving this precious resource.</p>
+                    </div>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md service-card transition duration-300">
+                    <div class="h-48 bg-green-100 flex items-center justify-center">
+                        <i class="fas fa-road text-green-600 text-5xl hover:animate-bounce"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Paving & Hardscaping</h3>
+                        <p class="text-gray-600">Beautiful and durable paving solutions including stone walkways, patios, driveways, and retaining walls to enhance your property.</p>
+                    </div>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md service-card transition duration-300">
+                    <div class="h-48 bg-green-100 flex items-center justify-center">
+                        <i class="fas fa-home text-green-600 text-5xl hover:animate-bounce"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Complete Outdoor Makeovers</h3>
+                        <p class="text-gray-600">Full-service transformations of outdoor spaces, from initial design to final installation, creating your dream outdoor living area.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Portfolio</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">See examples of our landscaping projects in Kampala</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project 1 -->
+                <div class="relative group overflow-hidden rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Residential Garden" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div class="text-white text-center p-4">
+                            <h3 class="text-xl font-bold mb-2">Kololo Residence</h3>
+                            <p class="text-sm">Complete garden redesign with native plants</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="relative group overflow-hidden rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1560703650-ef3e0f254ae0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Commercial Landscape" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div class="text-white text-center p-4">
+                            <h3 class="text-xl font-bold mb-2">Nakasero Office Complex</h3>
+                            <p class="text-sm">Corporate landscaping with water features</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="relative group overflow-hidden rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Irrigation System" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div class="text-white text-center p-4">
+                            <h3 class="text-xl font-bold mb-2">Bugolobi Home</h3>
+                            <p class="text-sm">Smart irrigation system installation</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="relative group overflow-hidden rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1560703650-ef3e0f254ae0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Paving Project" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div class="text-white text-center p-4">
+                            <h3 class="text-xl font-bold mb-2">Entebbe Villa</h3>
+                            <p class="text-sm">Stone paving and outdoor living space</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="relative group overflow-hidden rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Tree Planting" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div class="text-white text-center p-4">
+                            <h3 class="text-xl font-bold mb-2">Kira School</h3>
+                            <p class="text-sm">Educational campus greening project</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="relative group overflow-hidden rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1560703650-ef3e0f254ae0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Complete Makeover" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div class="text-white text-center p-4">
+                            <h3 class="text-xl font-bold mb-2">Muyenga Residence</h3>
+                            <p class="text-sm">Complete outdoor space transformation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#contact" class="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-md font-bold text-lg transition duration-300 inline-block">Start Your Project Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-green-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">What Our Clients Say</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Hear from homeowners and businesses who trusted Green Cyprus with their outdoor spaces</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-lg testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Green Cyprus transformed our neglected backyard into a beautiful oasis. Their team was professional, creative, and completed the project on time and within budget. Highly recommended!"</p>
+                    <div class="flex items-center">
+                        <div class="bg-green-100 text-green-600 rounded-full w-12 h-12 flex items-center justify-center font-bold mr-4">JM</div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">James M.</h4>
+                            <p class="text-gray-500 text-sm">Kololo Residence</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-lg testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"As a property developer, I've worked with many landscapers. Green Cyprus stands out for their attention to detail and sustainable approach. Our clients consistently praise their work."</p>
+                    <div class="flex items-center">
+                        <div class="bg-green-100 text-green-600 rounded-full w-12 h-12 flex items-center justify-center font-bold mr-4">SK</div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Sarah K.</h4>
+                            <p class="text-gray-500 text-sm">Kampala Properties Ltd</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-6 rounded-lg testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"The irrigation system Green Cyprus installed has saved us so much water while keeping our gardens lush. Their maintenance team is reliable and knowledgeable. A pleasure to work with."</p>
+                    <div class="flex items-center">
+                        <div class="bg-green-100 text-green-600 rounded-full w-12 h-12 flex items-center justify-center font-bold mr-4">AB</div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Amina B.</h4>
+                            <p class="text-gray-500 text-sm">Entebbe Hotel</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row">
+                <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Get In Touch</h2>
+                    <p class="text-gray-600 mb-8">Ready to transform your outdoor space? Contact us for a free consultation and quote. Our team is ready to bring your landscaping vision to life.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-green-100 text-green-600 rounded-full w-10 h-10 flex items-center justify-center mr-4 mt-1 hover:animate-bounce">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800 mb-1">Our Office</h3>
+                                <p class="text-gray-600">Spring Rd, Kampala, Uganda</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-green-100 text-green-600 rounded-full w-10 h-10 flex items-center justify-center mr-4 mt-1 hover:animate-bounce">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800 mb-1">Call Us</h3>
+                                <p class="text-gray-600">+256 775 132777</p>
+                                <p class="text-gray-600">+256 700 123456</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-green-100 text-green-600 rounded-full w-10 h-10 flex items-center justify-center mr-4 mt-1 hover:animate-bounce">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800 mb-1">Email Us</h3>
+                                <p class="text-gray-600">info@greencyprus.ug</p>
+                                <p class="text-gray-600">quotes@greencyprus.ug</p>
+                                <p class="text-gray-600">Spring Rd, Kampala, Uganda</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-green-100 text-green-600 rounded-full w-10 h-10 flex items-center justify-center mr-4 mt-1 hover:animate-bounce">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800 mb-1">Working Hours</h3>
+                                <p class="text-gray-600">Monday - Friday: 8:00 AM - 5:00 PM</p>
+                                <p class="text-gray-600">Saturday: 9:00 AM - 2:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Request a Free Quote</h3>
+                        <form id="contactForm">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                                    <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                            </div>
+                            <div class="mb-6">
+                                <label for="service" class="block text-gray-700 font-medium mb-2">Service Needed</label>
+                                <select id="service" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+                                    <option value="">Select a service</option>
+                                    <option value="design">Landscape Design</option>
+                                    <option value="lawn">Lawn & Garden Care</option>
+                                    <option value="tree">Tree & Shrub Planting</option>
+                                    <option value="irrigation">Irrigation Systems</option>
+                                    <option value="paving">Paving & Hardscaping</option>
+                                    <option value="complete">Complete Outdoor Makeover</option>
+                                </select>
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 font-medium mb-2">Project Details</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white py-3 px-6 rounded-md font-bold transition duration-300">Submit Request</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <div class="h-96 w-full">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7536223157963!2d32.581823314753894!3d0.3132205999999941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbb93c5695ab7%3A0x8e2778191806d3c!2sKampala%2C%20Uganda!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-leaf mr-2 text-green-400"></i> Green Cyprus Ltd
+                    </h3>
+                    <p class="text-gray-400">Creating beautiful, sustainable outdoor spaces in Kampala since 2008.</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-white">Gallery</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Landscape Design</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Garden Maintenance</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Tree Planting</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Irrigation Systems</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Paving & Hardscaping</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">Subscribe to get landscaping tips and special offers.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 w-full rounded-l-md focus:outline-none text-gray-800">
+                        <button type="submit" class="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-r-md"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Green Cyprus Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+            const service = document.getElementById('service').value;
+            const message = document.getElementById('message').value;
+            
+            // Here you would typically send this data to your server
+            // For this example, we'll just show an alert
+            alert(`Thank you, ${name}! Your quote request has been received. We'll contact you shortly at ${phone} or ${email}.`);
+            
+            // Reset form
+            this.reset();
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!document.getElementById('mobile-menu').classList.contains('hidden')) {
+                        document.getElementById('mobile-menu').classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
